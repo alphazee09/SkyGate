@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="metadataGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f51b5" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="10" y="10" width="30" height="35" rx="2" stroke="url(#metadataGradient)" stroke-width="2" />
+    <path d="M15 18 L35 18" stroke="url(#metadataGradient)" stroke-width="2" />
+    <path d="M15 25 L35 25" stroke="url(#metadataGradient)" stroke-width="2" />
+    <path d="M15 32 L35 32" stroke="url(#metadataGradient)" stroke-width="2" />
+    <path d="M15 39 L25 39" stroke="url(#metadataGradient)" stroke-width="2" />
+    <path d="M20 5 L30 5 L30 15 L20 15 Z" fill="url(#metadataGradient)" opacity="0.7" />
+  </g>
+</svg>

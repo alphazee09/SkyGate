@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3f51b5" />
+      <stop offset="100%" stop-color="#00e5ff" />
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <circle cx="100" cy="100" r="90" stroke="url(#logoGradient)" stroke-width="6" />
+    <path d="M100 30 L100 170" stroke="url(#logoGradient)" stroke-width="6" />
+    <path d="M30 100 L170 100" stroke="url(#logoGradient)" stroke-width="6" />
+    <circle cx="100" cy="100" r="30" fill="url(#logoGradient)" opacity="0.7" />
+    <path d="M60 60 L140 140" stroke="url(#logoGradient)" stroke-width="6" />
+    <path d="M60 140 L140 60" stroke="url(#logoGradient)" stroke-width="6" />
+  </g>
+</svg>

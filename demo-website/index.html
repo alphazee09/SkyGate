@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyGate AI Detection</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/skygate-logo.svg" alt="SkyGate Logo">
+                <h1>SkyGate</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#demo">Demo</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="glow-text">Detect AI-Generated Content with Precision</h1>
+                <p>SkyGate uses state-of-the-art algorithms to identify AI-generated images and videos with high accuracy.</p>
+                <div class="cta-buttons">
+                    <a href="#demo" class="btn btn-primary">Try Demo</a>
+                    <a href="#features" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-image.png" alt="AI Detection Visualization">
+                <div class="floating-badge ai-badge">AI Detected</div>
+                <div class="floating-badge real-badge">Real Content</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">Advanced Detection Features</h2>
+            <p class="section-subtitle">Multiple detection methods working together for maximum accuracy</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/vit-icon.svg" alt="Vision Transformer Icon">
+                    </div>
+                    <h3>Vision Transformer Analysis</h3>
+                    <p>Treats images as sequences of patches to identify patterns characteristic of AI generation.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/resnet-icon.svg" alt="ResNet Icon">
+                    </div>
+                    <h3>ResNet50 NoDown Architecture</h3>
+                    <p>Specialized neural network architecture designed specifically for GAN detection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/metadata-icon.svg" alt="Metadata Icon">
+                    </div>
+                    <h3>Metadata Examination</h3>
+                    <p>Analyzes EXIF data and other metadata for inconsistencies or missing information.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/pixel-icon.svg" alt="Pixel Analysis Icon">
+                    </div>
+                    <h3>Pixel-Level Analysis</h3>
+                    <p>Detects sensor pattern noise inconsistencies and compression artifacts typical in AI-generated content.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="demo" class="demo">
+        <div class="container">
+            <h2 class="section-title">Interactive Demo</h2>
+            <p class="section-subtitle">Upload an image to see SkyGate in action</p>
+            
+            <div class="demo-container">
+                <div class="upload-area" id="uploadArea">
+                    <div class="upload-icon">
+                        <img src="images/upload-icon.svg" alt="Upload Icon">
+                    </div>
+                    <p>Drag & drop your image here or <span class="upload-link">browse files</span></p>
+                    <p class="upload-info">Supported formats: JPEG, PNG, GIF, BMP, WEBP</p>
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                </div>
+                
+                <div class="result-area" id="resultArea" style="display: none;">
+                    <div class="result-header">
+                        <h3>Detection Results</h3>
+                        <button class="btn btn-small" id="newAnalysisBtn">New Analysis</button>
+                    </div>
+                    
+                    <div class="result-content">
+                        <div class="image-preview">
+                            <img id="previewImage" src="" alt="Uploaded Image">
+                        </div>
+                        
+                        <div class="result-details">
+                            <div class="result-verdict" id="resultVerdict">
+                                <!-- Will be filled by JavaScript -->
+                            </div>
+                            
+                            <div class="confidence-score">
+                                <h4>Confidence Score</h4>
+                                <div class="progress-container">
+                                    <div class="progress-bar" id="confidenceBar"></div>
+                                    <span class="progress-text" id="confidenceText">0%</span>
+                                </div>
+                            </div>
+                            
+                            <div class="detection-methods">
+                                <h4>Detection Methods</h4>
+                                <ul class="method-list">
+                                    <li>
+                                        <span class="method-name">Vision Transformer</span>
+                                        <div class="method-score" id="vitScore">0%</div>
+                                    </li>
+                                    <li>
+                                        <span class="method-name">ResNet Analysis</span>
+                                        <div class="method-score" id="resnetScore">0%</div>
+                                    </li>
+                                    <li>
+                                        <span class="method-name">Metadata Analysis</span>
+                                        <div class="method-score" id="metadataScore">0%</div>
+                                    </li>
+                                    <li>
+                                        <span class="method-name">Pixel Analysis</span>
+                                        <div class="method-score" id="pixelScore">0%</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="loading-area" id="loadingArea" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Analyzing image...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About SkyGate</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>SkyGate is a comprehensive application designed to detect whether images and videos are AI-generated or authentic. The application leverages state-of-the-art detection algorithms to provide accurate and detailed analysis results.</p>
+                    
+                    <p>As AI-generated content becomes increasingly sophisticated, the ability to distinguish between real and synthetic media is more important than ever. SkyGate addresses this challenge with multiple detection methods working in concert to provide high accuracy.</p>
+                    
+                    <p>Our technology is built on extensive research in computer vision, deep learning, and digital forensics, making it one of the most advanced AI detection systems available.</p>
+                </div>
+                
+                <div class="tech-stack">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-icons">
+                        <div class="tech-icon">
+                            <img src="images/python-icon.svg" alt="Python">
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="images/tensorflow-icon.svg" alt="TensorFlow">
+                            <span>TensorFlow</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="images/pytorch-icon.svg" alt="PyTorch">
+                            <span>PyTorch</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="images/react-icon.svg" alt="React">
+                            <span>React</span>
+                        </div>
+                        <div class="tech-icon">
+                            <img src="images/flask-icon.svg" alt="Flask">
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Have questions about SkyGate? Get in touch with our team.</p>
+            
+            <div class="contact-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email address">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Your message" rows="5"></textarea>
+                </div>
+                
+                <button class="btn btn-primary" id="submitBtn">Send Message</button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/skygate-logo.svg" alt="SkyGate Logo">
+                    <h2>SkyGate</h2>
+                </div>
+                
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Navigation</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Features</a></li>
+                            <li><a href="#demo">Demo</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Documentation</a></li>
+                            <li><a href="#">API Reference</a></li>
+                            <li><a href="#">GitHub Repository</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 SkyGate AI Detection. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

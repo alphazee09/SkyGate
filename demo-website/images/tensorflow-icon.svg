@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="tensorflowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF6F00" />
+      <stop offset="100%" stop-color="#FF9100" />
+    </linearGradient>
+  </defs>
+  <g fill="none" fill-rule="evenodd">
+    <path d="M25,5 L45,15 L45,35 L25,45 L5,35 L5,15 L25,5 Z" stroke="url(#tensorflowGradient)" stroke-width="2" />
+    <path d="M25,5 L25,45" stroke="url(#tensorflowGradient)" stroke-width="2" />
+    <path d="M5,15 L45,35" stroke="url(#tensorflowGradient)" stroke-width="2" />
+    <path d="M5,35 L45,15" stroke="url(#tensorflowGradient)" stroke-width="2" />
+    <circle cx="25" cy="5" r="3" fill="url(#tensorflowGradient)" />
+    <circle cx="45" cy="15" r="3" fill="url(#tensorflowGradient)" />
+    <circle cx="45" cy="35" r="3" fill="url(#tensorflowGradient)" />
+    <circle cx="25" cy="45" r="3" fill="url(#tensorflowGradient)" />
+    <circle cx="5" cy="35" r="3" fill="url(#tensorflowGradient)" />
+    <circle cx="5" cy="15" r="3" fill="url(#tensorflowGradient)" />
+    <circle cx="25" cy="25" r="3" fill="url(#tensorflowGradient)" />
+  </g>
+</svg>
