@@ -79,3 +79,26 @@ For detailed documentation, please refer to the following:
 ## License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
+<br>
+
+---
+
+<h3 align="center">✨ Created & Crafted By: <a href="https://github.com/alphazee09">Eng. Mazin Yahia</a> ✨</h3>
+
+<p align="center">
+  <a href="https://github.com/alphazee09?tab=repositories">
+    <img src="https://img.shields.io/badge/View-My_Repositories-blue?style=for-the-badge&logo=github" alt="View Repositories"/>
+  </a>
+  &nbsp;&nbsp;&nbsp;
+  <a href="https://mazinyahia.com">
+    <img src="https://img.shields.io/badge/Visit-My_Portfolio-green?style=for-the-badge&logo=google-chrome" alt="Visit Portfolio"/>
+  </a>
+</p>
+
+<p align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Roboto+Slab&color=%237E3ACE&size=20&center=true&vCenter=true&width=500&duration=3000&pause=1000&lines=Turning+Ideas+Into+Reality;Building+Scalable+Solutions;Passionate+About+AI+%26+Backend+Development" alt="Typing Animation"/>
+</p>
+
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=alphazee09&label=Profile+Views&color=blueviolet&style=flat" alt="Profile Views"/>
+</p>
