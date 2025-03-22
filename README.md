@@ -96,10 +96,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 </p>
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Roboto+Slab&color=%237E3ACE&size=20&center=true&vCenter=true&width=500&duration=4000&pause=1000&lines=
-    My+Code+doesn’t+have+bugs,+it+just+develops+random+features;" alt="Typing Animation"/>
+  <img src="https://readme-typing-svg.demolab.com?font=Roboto+Slab&color=%237E3ACE&size=20&center=true&vCenter=true&width=500&duration=4000&pause=1000&lines=My+Code+doesn’t+have+bugs+it+just+develops+random+features;" alt="Typing Animation"/>
 </p>
 
 <p align="center">
-  <img src="https://cdn-icons-png.flaticon.com/512/7124/7124129.png" alt="Sudan"/>
+  <img src="https://cdn-icons-png.flaticon.com/512/7124/7124129.png" width="100" height="auto" alt="Sudan Flag"/>
 </p>
