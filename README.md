@@ -100,5 +100,5 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=alphazee09&label=Profile+Views&color=blueviolet&style=flat" alt="Profile Views"/>
+  <img src="https://komarev.com/ghpvc/?username=bradtraversy&label=Profile+Views&color=blueviolet&style=flat" alt="Profile Views"/>
 </p>
